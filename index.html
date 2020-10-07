@@ -29,7 +29,9 @@
                     <li>
                         <a href="#">Home</a>
                         <ul>
-                            <li><a href="#">CV</a></li>
+                            <li><a href="#">Curriculum Vitae</a></li>
+                            <li><a href="#">Random Link</a></li>
+                            <li><a href="#">Random Link</a></li>
                         </ul>
                     </li>
                     <li>
@@ -49,18 +51,37 @@
                 </div>
                 <div class="right">
                     <p>Hi! My name is Matt Simpson and I am currently a Full Stack student at <a href="https://www.bc.fi" target="_blank">Helsinki Business College</a>. Before coming to study Full Stack I completed a vocational degree in Front End development at <a href="https://www.taitotalo.fi" target="_blank">Taitotalo</a>, also in Helsinki.</p>
+                    <br>
+                    <p>
+                        Allo
+                    </p>
                 </div>
             </section>
             <h2><span>Contact me</span></h2>
             <section>
-
+                <form>
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Your first name...">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Your last name....">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write message here..."></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+            <h2><span>Curriculum Vitae</span></h2>
+            <section>
+                
             </section>
         </main>
         <footer>
-            <div class="scroll-top">
-                <button onclick="scrollToTop()">
-                    <i class="fas fa-chevron-up"></i>
-                </button>
+            <div class="name">
+                <p>
+                    &#169; 3030 Matt Simpson
+                </p>
+            </div>
+            <div onclick="scrollToTop()" class="scroll-top">
+                <i class="fas fa-chevron-up"></i>
             </div>
         </footer>
         <script src="js/script.js"></script>
