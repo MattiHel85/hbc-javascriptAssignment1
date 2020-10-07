@@ -1,1 +1,1 @@
-# hbc-javascrioptAssignment1
+# hbc-javascriptAssignment1
