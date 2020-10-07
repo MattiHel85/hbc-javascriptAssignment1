@@ -5,10 +5,10 @@
 }
 
 :root {
-    --background-color: #700590;
-    --background-light: #b00de2;
-    --dropdown-background: #dc75fb;
-    --background-image: linear-gradient(to right, purple, violet);
+    --background-color: #f6f6f6;
+    /* --background-light: #b00de2; */
+    /* --dropdown-background: #dc75fb; */
+    /* --background-image: linear-gradient(to right, purple, violet); */
     --light-color: #FFF;
     --dark-color: #333;
 }
@@ -16,5 +16,120 @@
 
 body {
     font-family: "PT Sans", helvetica, sans-serif;
-    background-image: var(--background-image);
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--dark-color);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header .logo p {
+    font-size: 2rem;
+}
+
+header .icon {
+    display: none;
+}
+
+header nav ul {
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    padding: 1rem;
+}
+
+header nav ul li a:hover {
+    background-color: var(--background-light);
+}
+
+header nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 35px;
+    background-color: var(--background-light);
+}
+
+header nav ul li:hover ul {
+    display: block;
+}
+
+header nav ul li ul li {
+    display: block;
+}
+
+header nav ul li ul li a {
+    display: block;
+    padding: 1rem;
+}
+
+header nav ul li ul li a:hover {
+    background-color: var(--dropdown-background);
+}
+
+/* mobile menu  */
+
+
+main {
+    margin-top: 150px;
+}
+
+section {
+    min-height: 25vh;
+}
+
+@media (max-width: 576px) {
+    header .icon {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: var(--dropdown-background);
+        width: 100%;
+    }
+
+    header nav ul.mobilemenu {
+        display: block;
+    }
+
+    header nav ul li {
+        display: block;
+
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 1rem;
+    }
+
+    header nav ul li ul {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        display: block;
+        top: 0;
+        padding-left: 1rem;
+    }
 }
