@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #700590;
+    --background-light: #b00de2;
+    --dropdown-background: #dc75fb;
+    --background-image: linear-gradient(to right, purple, violet);
+    --light-color: #FFF;
+    --dark-color: #333;
+}
+
+
+body {
+    font-family: "PT Sans", helvetica, sans-serif;
+    background-image: var(--background-image);
+}
