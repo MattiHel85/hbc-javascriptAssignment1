@@ -90,10 +90,34 @@ header nav ul li ul li a:hover {
 
 main {
     margin-top: 150px;
+    margin-left: 15%;
+    width: 70%;
 }
 
 section {
     min-height: 25vh;
+    display: flex;
+}
+
+h1 span {
+    border-bottom: 2px solid var(--dark-color);
+}
+
+section .left {
+    margin: 2rem;
+}
+
+section .right {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+section img {
+    border-radius: 50%;
+    border: 2px solid var(--dark-color);
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 15px 15px var(--dark-color);
 }
 
 @media (max-width: 576px) {
