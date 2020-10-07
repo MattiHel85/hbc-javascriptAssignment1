@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --background-color: #f6f6f6;
     /* --background-light: #b00de2; */
@@ -24,6 +28,14 @@ a {
     text-decoration: none;
 }
 
+h1 span {
+    border-bottom: 2px solid var(--dark-color);
+}
+
+h2 span {
+    border-bottom: 2px solid var(--dark-color);
+}
+
 header {
     background-color: var(--background-color);
     color: var(--dark-color);
@@ -34,6 +46,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    border-bottom: 2px solid transparent;
+    box-shadow: 2px 2px 2px var(--dark-color);
 }
 
 header .logo p {
@@ -99,10 +113,6 @@ section {
     display: flex;
 }
 
-h1 span {
-    border-bottom: 2px solid var(--dark-color);
-}
-
 section .left {
     margin: 2rem;
 }
@@ -156,4 +166,25 @@ section img {
         top: 0;
         padding-left: 1rem;
     }
+}
+
+/* button to scroll back to the top of the page  */
+
+.scroll-top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.scroll-top button:hover {
+    cursor: pointer;
+}
+
+.scroll-top i {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 5px;
 }
