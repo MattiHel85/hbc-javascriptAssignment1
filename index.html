@@ -29,7 +29,7 @@
                     <li>
                         <a href="#">Home</a>
                         <ul>
-                            <li><a href="#">Curriculum Vitae</a></li>
+                            <li><a href="files/ms-cv.pdf" download="">Download CV</a></li>
                             <li><a href="#">Random Link</a></li>
                             <li><a href="#">Random Link</a></li>
                         </ul>
@@ -59,19 +59,17 @@
             </section>
             <h2><span>Contact me</span></h2>
             <section>
-                <form>
+                <form id="contact-form">
                     <label for="firstname">First Name</label>
                     <input type="text" id="firstname" name="firstname" placeholder="Your first name...">
                     <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Your last name....">
+                    <input type="text" id="lastname" name="lastname" placeholder="Your last name...">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email address...">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Write message here..."></textarea>
                     <input type="submit" value="Submit">
                 </form>
-            </section>
-            <h2><span>Curriculum Vitae</span></h2>
-            <section>
-                
             </section>
         </main>
         <footer>
@@ -85,5 +83,6 @@
             </div>
         </footer>
         <script src="js/script.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     </body>
 </html>
