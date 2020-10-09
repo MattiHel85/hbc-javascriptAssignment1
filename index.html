@@ -59,11 +59,10 @@
             </section>
             <h2><span>Contact me</span></h2>
             <section>
-                <form id="contact-form">
-                    <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="Your first name...">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Your last name...">
+                <div id="form-messages"></div>
+                <form id="contact-form" method="POST" action="mailer.php">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name...">
                     <label for="email">Email</label>
                     <input type="text" id="email" name="email" placeholder="Your email address...">
                     <label for="message">Message</label>
@@ -73,23 +72,27 @@
             </section>
         </main>
         <footer>
-            <div class="some-links">
-                <h2>Reach me on social media</h2>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i> 
-            </div>
-            <div class="name">
-                <p>
-                    &#169; 3030 Matt Simpson
-                </p>                   
-            </div>
-        
-            <div onclick="scrollToTop()" class="scroll-top">
-                <i class="fas fa-chevron-up"></i>
-            </div>
+            <section class="ft-main">
+                <div class="ft-main-item">
+                    <h2>Reach me on social media</h2>
+                    <a href="https://github.com/MattiHel85" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/mattisimpson" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/mattsimpson_hel" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="ft-main-item">
+                    <p>
+                        &#169; 3030 Matt Simpson
+                    </p>                   
+                </div>
+            </section>
         </footer>
+    
+        <div onclick="scrollToTop()" class="scroll-top">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <script src="jquery-2.1.0.min.js"></script>
+        <script src="js/app.js"></script>
         <script src="js/script.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script> -->
     </body>
 </html>
