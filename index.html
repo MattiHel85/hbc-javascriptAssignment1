@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
@@ -20,64 +21,122 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header>
-            <div class="logo"><p>Matt Simpson</p></div>
-            <nav>
-                <a onclick="mobileMenu()" href="#" class="icon">
-                    <span class="material-icons"> menu </span>
-                </a>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                        <ul>
-                            <li><a href="files/ms-cv.pdf" download="">Download CV</a></li>
-                            <li><a href="#">Random Link</a></li>
-                            <li><a href="#">Random Link</a></li>
-                        </ul>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark font-white">
+                <a class="navbar-brand" href="#">Matt Simpson</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="files/ms-cv.pdf" download="">CV</a>
                     </li>
                     <li>
-                        <a href="#">About Me</a>
+                      <a class="nav-link" href="#contactme">Contact Me</a>
                     </li>
-                    <li>
-                        <a href="#">Contact Me</a>
-                    </li>
-                </ul>
-            </nav>
+                  </ul>
+                  </form>
+                </div>
+              </nav>
         </header>
         <main>
-            <h1><span>About me</span></h1>
             <section>
-                <div class="left">
-                    <img src="files/simpson.JPG">
-                </div>
-                <div class="right">
-                    <p>Hi! My name is Matt Simpson and I am currently a Full Stack student at <a href="https://www.bc.fi" target="_blank">Helsinki Business College</a>. Before coming to study Full Stack I completed a vocational degree in Front End development at <a href="https://www.taitotalo.fi" target="_blank">Taitotalo</a>, also in Helsinki.</p>
-                    <br>
-                    <p>
-                        Allo
-                    </p>
-                </div>
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6 text-center p-5">
+                          <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="files/simpson.JPG" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Hi!</h5>
+                              <p class="card-text">My name is Matt Simpson and I am studying Full Stack development at <a href="https://www.bc.fi" target="_blank">Helsinki Business College</a>. Before coming to study Full Stack I completed a vocational degree in Front End development at <a href="https://www.taitotalo.fi" target="_blank">Taitotalo</a>, also in Helsinki.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 text-center p-2">
+                            <h2 class="mb-5">My skills</h2>
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-sm-6 col-lg-4 mb-2 text-center">
+                                  <h4 class="mb-3">HTML5</h4>
+                                  <i class="fab fa-html5 display-2"></i>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-2 text-center">
+                                  <h3 class="mb-3">CSS3</h3>
+                                  <i class="skills-icon-css fab fa-css3-alt display-2"></i>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-2 text-center">
+                                  <h4 class="mb-3">Bootstrap 4</h4>
+                                  <i class="fab fa-bootstrap display-2"></i>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-2 text-center">
+                                  <h4 class="mb-3">Javascript</h4>
+                                  <i class="skills-icon-js fab fa-js display-2"></i>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-2 text-center">
+                                  <h4 class="mb-3">MongoDB</h4>
+                                  <img id="mongo-img" src="files/mongodb.svg">  
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-2 text-center">
+                                  <h4 class="mb-4">ExpressJS</h4>
+                                  <img id="express-img" src="files/expressjs.svg"> 
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-2 text-center">
+                                  <h4 class="mb-3">ReactJS</h4>
+                                  <i class="react fab fa-react display-2"></i>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-2 text-center">
+                                  <h4 class="mb-3">NodeJS</h4>
+                                  <i class="fab fa-node display-2"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
             </section>
-            <h2><span>Contact me</span></h2>
-            <section>
-                <div id="form-messages"></div>
-                <form id="contact-form" method="POST" action="mailer.php">
+            <section id="contactme">
+              <h2 class="text-center"><span>Contact me</span></h2>
+                <form id="contact-form">
+                  <div class="form-group">
                     <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name...">
+                    <input type="text" id="name" name="name" placeholder="Your name..." class=" border border-dark">
+                  </div>
+                  <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Your email address...">
+                    <input type="text" id="email" name="email" placeholder="Your email address..." class="border border-dark">
+                  </div>
+                  <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write message here..."></textarea>
-                    <input type="submit" value="Submit">
+                    <textarea id="message" name="message" placeholder="Write message here..." class="border border-dark"></textarea>
+                  </div>
+                    
+                    <div class="container">
+                      <div class="row">
+                        <div class="col text-center">
+                          <button class="btn btn-default">Submit</button>
+                        </div>
+                      </div>
+                    </div>
                 </form>
             </section>
         </main>
-        <footer>
-            <section class="ft-main">
+        <footer class="bg-dark text-white">
+            <section class="ft-main text-center">
                 <div class="ft-main-item">
                     <h2>Reach me on social media</h2>
-                    <a href="https://github.com/MattiHel85" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com/mattisimpson" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/mattsimpson_hel" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <div class="container text-center">
+                      <div class="row">
+                        <a href="https://github.com/MattiHel85" target="_blank"><i class="m-3 display-4 col-sm-12 fab fa-github"></i></a>
+                        <a href="https://twitter.com/mattisimpson" target="_blank"><i class="m-3 display-4 col-sm-12 fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/mattsimpson_hel" target="_blank"><i class="m-3 display-4 col-sm-12 fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                    
                 </div>
                 <div class="ft-main-item">
                     <p>
@@ -87,12 +146,19 @@
             </section>
         </footer>
     
-        <div onclick="scrollToTop()" class="scroll-top">
+        <div onclick="scrollToTop()" class="scroll-top text-white bg-dark">
             <i class="fas fa-chevron-up"></i>
         </div>
-        <script src="jquery-2.1.0.min.js"></script>
-        <script src="js/app.js"></script>
+        <!-- <script src="jquery-2.1.0.min.js"></script> -->
         <script src="js/script.js"></script>
-        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script> -->
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
